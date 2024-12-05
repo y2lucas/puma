@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="formulario.css">
+    <script src="formulario.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <a id="botao1" href="Inicio.html" class="logo"><img src="img/logo.png" width="300px" height="100px"
+                    style="margin: -20px; padding-top: 10px;"></a>
+            <a id="botao1" href="formulario.html">Cadastrar-se</a>
+            <a id="botao1" href="download.html"><img src="img/f1.png" height="60px" width="150px"></a>   
+            <a id="botao1" href="historia.html">História</a>
+            <a id="botao1" href="Classes.html"><img src="img/pokbol-removebg-preview.png" height="70px"
+                    width="102px"></a>
+        </nav>
+    </header>
+
+    <section class="field">
+        <div class="fundo-form" id="FUNDO">
+
+            <center>
+                <h1 style="color: rgb(0, 0, 0);" id="FUNDO1">Crie Sua conta</h1>
+            </center><br>
+
+
+
+            <form method="post" action="create_usuario.php" class="formulario" id="FUNDO2">
+                <div style="color: black;">
+                    <label>Nome Completo:</label><br>
+                </div>
+                <div>
+                    <input type="text" name="nome" placeholder="Ex.:João Batista" style="width: 550px;">
+                </div>
+                <br>
+                <div>
+                    <div style="color: black;">
+                        <label>DDD*</label>
+                    </div>
+                    <div style="color: black;">
+                        <label style="margin-left: 45px;">Digite seu Celular:</label><br>
+                    </div>
+                </div>
+                <div>
+                    <input type="text" name="ddd" placeholder="000"
+                        style="width: 75px; text-align: center; padding-right: 6px;" maxlength="3">
+                    <input type="text" name="celular" placeholder="00000-0000" style="margin-left: 20px; width: 455px;"
+                        maxlength="10">
+                </div><br>
+                <div style="color: black;">
+                    <label>Seu E-mail:</label><br>
+                </div>
+                <div>
+                    <input type="email" name="email" placeholder="seuemail@email.com" style="width: 550px;">
+                </div><br>
+                <div style="color: black;">
+                    <label>Estado:</label>
+                    <label style="margin-left: 115px;">Cidade:</label><br>
+                </div>
+                <div>
+                    <select name="estado" style="width: 150px;">
+                        <option value="" disabled selected hidden>Selecione</option>
+                        <option value="PE">PE</option>
+                        <option value="AC">AC</option>
+                        <option value="AP">AP</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                    </select>
+                    <select name="cidade" style="margin-left: 25px; width: 375px;">
+                        <option value="" disabled selected hidden>Selecione uma Cidade</option>
+                        <option value="recife">Recife</option>
+                        <option value="maceio">Maceió</option>
+                        <option value="macapa">Macapá</option>
+                        <option value="manaus">Manaus</option>
+                        <option value="salvador">Salvador</option>
+                        <option value="fortaleza">Fortaleza</option>
+                        <option value="brasilia">Brasília</option>
+                        <option value="vitoria">Vitória</option>
+                        <option value="goiania">Goiânia</option>
+                    </select>
+                </div><br>
+                <div style="color: black;">
+                    <label>Escolha um Servidor:</label><br>
+                </div>
+                <div>
+                    <select style="width: 550px;" name="servidor">
+                        <option value="" disabled selected hidden>Selecione um Servidor</option>
+                        <option value="S1">Servidor 1</option>
+                        <option value="S2">Servidor 2</option>
+                        <option value="S3">Servidor 3</option>
+                    </select>
+                </div>
+                <div class="botao" id="botao">
+                    <input type="submit" name="submit" value="Cadastrar">
+                </div>
+
+            </form>
+
+        </div>
+    </section>
+
+    <div class="container-2">
+        <img src="img/BackGroundForm.jpg" id="IMG">
+    </div>
+
+</body>
+
+</html>

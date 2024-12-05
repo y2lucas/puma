@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{ 
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    padding-top: 150px;   
+    background-color: rgb(0, 0, 0);
+    
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;    
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+}
+
+.logo{
+    position: relative;
+    font-size: 50px; 
+    color: rgb(236, 175, 7);
+    text-decoration: none;
+    font-weight: 600;
+    
+}
+
+.logo img{
+    width: 200px;
+    border-radius: 15px;
+}
+
+nav {
+    background: linear-gradient(180deg, #000000 20%, #000000d8 65%, #ac0c0c07 100%);
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .logo {
+    color: rgb(236, 175, 76);
+    float: left;
+    display: block;
+    padding: 14px 30px;
+    
+}
+
+nav a {
+    
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;     
+    padding: 20px 10px;    
+    font-weight: 500;        
+}
+
+nav a:hover {
+    color: #e6881c;
+    transition: .5s;
+    background-color: #1d0ea5;
+    border-radius: 10% ;
+    margin: 0 5px;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.Container{
+    display: flex;
+    justify-content: flex-end;   
+    
+}
+
+.container-2 img{
+    margin-top: -70px;
+    margin-left: -30px;
+    margin-right: 10%;    
+    border-radius: 15px;
+    width: 600px;
+    height: auto;
+    box-shadow: 8px 8px 8px #333;   
+    opacity: 0;   
+    transform: translateY(15px);
+    transition: opacity 0.3s ease, transform 0.3s ease; 
+    z-index: 50;
+}
+
+.formulario{
+    color: #ffffff;
+    padding: 30px;
+    opacity: 0;   
+    transform: translateY(15px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.formulario div{
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+}
+
+select{
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    height: 40px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    color: #413d3d;
+}
+
+
+.field label, 
+.field span{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 1.1em;    
+    
+}
+
+.radiobox label{
+    width: auto;
+    
+}
+
+input[type=text],
+input[type=email],
+textarea{
+    padding-left: 5px;
+    height: 40px;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 1.2em;
+}
+
+textarea{
+    line-height: 20px;
+    padding: 10px;
+    height: 90px;
+    resize: none;
+}
+
+input[type=submit]{
+    background-color: #000000;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+.imagem{
+    background-image: url(img/BackGroundForm.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;     
+    width: 700px;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    
+}
+
+.fundo-form{
+    width: 700px;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 8px 8px 8px #000000;
+    opacity: 0;   
+    transform: translateX(-15px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.fundo-form h1{
+    padding-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding-right: 50px;
+    opacity: 0;   
+    transform: translateX(-15px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.botao{
+    margin-top: 20px;
+    margin-right: 75px;
+    opacity: 0;   
+    transform: translateY(-15px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
