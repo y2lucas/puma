@@ -98,7 +98,7 @@ nav a:hover {
     height: auto;
     box-shadow: 8px 8px 8px #333;   
     opacity: 0;   
-    transform: translateY(15px);
+    transform: translatey(15px);
     transition: opacity 0.3s ease, transform 0.3s ease; 
     z-index: 50;
 }
